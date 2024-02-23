@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TextFieldAuth extends StatelessWidget {
-
+  
   final TextEditingController controller;
   final bool obscureText;
   final String hintText;
@@ -15,7 +15,7 @@ class TextFieldAuth extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Padding( 
       padding: EdgeInsets.symmetric(horizontal: 25,),
       child: TextField(
         cursorColor: const Color.fromARGB(255, 222, 100, 0),
