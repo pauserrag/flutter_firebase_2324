@@ -14,6 +14,10 @@ class _PaginaLoginState extends State<PaginaLogin> {
 
   final TextEditingController controllerEmail = TextEditingController();
   final TextEditingController controllerPassword = TextEditingController();
+  void ferLogin(){
+
+    
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +30,6 @@ class _PaginaLoginState extends State<PaginaLogin> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-              
                   // Logo.
                   const Icon(
                     Icons.fireplace,
@@ -122,7 +125,13 @@ class _PaginaLoginState extends State<PaginaLogin> {
                   const SizedBox(height: 10,),
             
                   // Boto login
-                  const BotoAuth(),
+                  BotoAuth(
+
+                    text: "Login",
+                    onTap: ferLogin,
+
+
+                  ),
             
                   
                 ],
