@@ -1,6 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_firebase_2324/auth/login_o_registre.dart';
 
 class PaginaInici extends StatelessWidget {
   const PaginaInici({super.key});
