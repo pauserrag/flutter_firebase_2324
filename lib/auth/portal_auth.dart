@@ -21,5 +21,6 @@ class PortalAuth extends StatelessWidget {
         },
       ),
     );
+    
   }
 }
