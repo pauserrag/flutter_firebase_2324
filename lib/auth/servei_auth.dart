@@ -6,23 +6,17 @@ class ServeiAuth {
 //Fer Login
 
   Future<UserCredential> loginAmbEmailIPassword(String email, password) async {
-
-    try{ 
-      
+    try {
       UserCredential creadencialUsuari = await _auth.signInWithEmailAndPassword(
-        email: email, 
-        password: password
-        );
+          email: email, password: password);
 
-        return creadencialUsuari;
-   
-  } on FirebaseAuthException catch (e){
-
-    throw Exception(e);
+      return creadencialUsuari;
+    } on FirebaseAuthException catch (e) {
+      throw Exception(e);
+    }
   }
 
-//Fer Registre
-
-//Fer logout
+  Future<void> tancarSessio() async {
+    return await _auth.signOut();
   }
-  }
+}
